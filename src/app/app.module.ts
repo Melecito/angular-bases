@@ -4,9 +4,12 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
 import { HeroesModule } from './heroes/heroes.module';
 import { CounterModule } from './components/counter.module';
+import { DbzModule } from './dbz/dbz.module';
+
+import { AppComponent } from './app.component';
 
 
 
@@ -19,7 +22,8 @@ import { CounterModule } from './components/counter.module';
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
-    CounterModule
+    CounterModule,
+    DbzModule
   ],
   providers: [
     provideClientHydration()
